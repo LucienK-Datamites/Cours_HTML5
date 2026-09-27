@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Chapter 21: JavaScript in HTML</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header class="site-header">
+        <nav class="chapter-nav" aria-label="Navigation des chapitres">
+            <a class="chapter-nav-home" href="index.html">Cours HTML5</a>
+            <ul>
+                <li><a href="index.html" aria-current="page">Chapitres 1 et 3</a></li>
+                <li><a href="Chap_4_Canvas.html">Chapitre 4 : Canvas</a></li>
+                <li><a href="Chap_6_IDs.html">Chapitre 6 : IDs et classes</a></li>
+                <li><a href="Chap_15_Headings.html">Chapitre 15 : Headings</a></li>
+                <li><a href="Chap_21_JavaScript.html">Chapitre 21 : JavaScript in HTML</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>HTML5 Chapter 21 - JavaScript in HTML</h1>
+    <script src="javaScript.js" type="text/javascript" async charset="utf-8" crossorigin="anonymous"></script>
+
+    <p>This chapter demonstrates how to include JavaScript code directly within an HTML document.</p>
+    <button onclick="showMessage()">Click me to see a message</button>
+    <script>
+        function showMessage() {
+            alert('Hello! This is a message from JavaScript.');
+        }
+    </script>
+
+
+</body>
+</html>
