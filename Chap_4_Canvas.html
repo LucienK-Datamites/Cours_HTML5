@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Chapter 4</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        canvas {
+            border: 1px solid #000;
+            display: block;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        window.onload = init; // call init() once the window is completely loaded 
+        function init(){ 
+            // #1 - get reference to <canvas> element 
+            var canvas = document.querySelector('canvas'); 
+    
+            // #2 - get reference to the drawing context and drawing API 
+            var ctx = canvas.getContext('2d'); 
+    
+            // #3 - all fill operations are now in red 
+            ctx.fillStyle = 'red'; 
+    
+            // #4 - fill a 100x100 rectangle at x=0,y=0 
+            ctx.fillRect(20,20,150,100); 
+    
+            // #5 - all fill operations are now in green 
+            ctx.fillStyle = 'green'; 
+    
+            // #6 - fill a 50x50 rectangle at x=25,y=25 
+            ctx.fillRect(30,30,80,100); 
+            
+            ctx.fillStyle = '#000'; // set fill color to black
+            ctx.fillRect(50, 50, 100, 50); // x, y, width, height
+            ctx.fillText("My red canvas with some black text", 24, 32); // text, x, y
+
+    
+        } 
+    </script>
+
+</head>
+<body>
+    <h1>HTML5 Chapter 4 - Canvas</h1>
+    <p>Canvas is a powerful feature of HTML5 that allows for dynamic, scriptable    rendering of 2D shapes and bitmap images. <br> It is widely used for creating graphics, animations, and interactive content on web pages.</p>
+    <canvas id="myCanvas" width="500" height="300" style="border:1px solid #000000bd;">
+        Cannot display graphic. Canvas is not supported by your browser.  Please upgrade your browser to view this content.
+    </canvas>
+    
+    <p>&nbsp; &nbsp; &nbsp; Okay for me to be &lt; 10, but &gt; 5 &amp; + &copy; + &reg; &amp; &phone;&aacute;</p>
+    <p> 
+        we can find the list of all the HTML entities at <a href="https://www.w3schools.com/html/html_entities.asp" target="_blank">HTML Entities</a> or <a href="https://html.spec.whatwg.org/multipage/named-characters.html" 
+target="_blank">HTML Named Characters</a>
+    </p>
+
+</body>
+</html>
