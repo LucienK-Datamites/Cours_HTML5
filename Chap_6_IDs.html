@@ -15,10 +15,11 @@
                 <li><a href="index.html" aria-current="page">Chapitres 1 et 3</a></li>
                 <li><a href="Chap_4_Canvas.html">Chapitre 4 : Canvas</a></li>
                 <li><a href="Chap_6_IDs.html">Chapitre 6 : IDs et classes</a></li>
+                <li><a href="Chap_15_Headings.html">Chapitre 15 : Headings</a></li> 
             </ul>
         </nav>
     </header>
-    
+
     <h1>HTML5 Chapter 6 - IDs and Classes</h1>
     <p>IDs and classes are essential for organizing and styling HTML elements. <br> They allow you to target specific elements with CSS and JavaScript.</p>
 
@@ -36,9 +37,59 @@
     <h1>Chapter 7:Comments in HTML5</h1>
     <!-- This is a comment in HTML5. Comments are not displayed in the browser and are used to leave notes for developers. -->
      
-    <canvas>
+    <div class="outer-div">
+        <div class="inner-div">
+            This is an inner div inside the outer div.
+        </div>
+        <div class="inner-div">
+            This is another inner div inside the outer div.
+        </div>
+    </div>
+    <br><br>
+    <h1>Chapter 8: Embedding External Content</h1>
+    <div class="cote-a-cote">
+        <embed src="https://lucienk-datamites.github.io/BP_Simulator/" type="text/html">
+        <iframe src="https://lucienk-datamites.github.io/BP_Simulator/"></iframe>
+    </div>
+    <br><br>
 
-    </canvas>
+    <h1>Chapter 13: HTML5 Forms</h1>
+    <form action="submit_form.php" method="post" accept-charset="UTF-8" autocomplete="on" novalidate enctype="multipart/form-data" name="myForm" target="_blank"    >
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    <br><br>
+    <form> 
+        <fieldset contextmenu="myMenu"> 
+            <legend>1st field set:</legend> 
+            Field one:<br> 
+            <input type="text"><br> 
+            Field two:<br> 
+            <input type="text"><br> 
+        </fieldset><br> 
+        <fieldset> 
+            <legend>2nd field set:</legend> 
+            Field three:<br> 
+            <input type="text"><br> 
+            Field four:<br> 
+            <input type="text"><br> 
+        </fieldset><br> 
+        <input type="submit" value="Submit"> 
+    </form>
+    <br><br>
+
+    <h1>Chapter 14: Global Attributes</h1>
+    <p>Global attributes are attributes that can be used on any HTML element.</p>
+    <p contenteditable>This is an editable paragraph.You can complete it:</p>
+
 
 </body>
 </html>

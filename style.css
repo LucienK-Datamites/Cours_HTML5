@@ -74,3 +74,22 @@ div.commonClass{
 #LucienKouakou{
   color: #511ae8;
 }
+outer-div{
+  color: #e8e81a;
+}
+inner-div{
+  color: #471ae8da;
+} 
+
+.cote-a-cote {
+  display: flex;
+  gap: 20px;          /* espace entre les deux */
+  flex-wrap: wrap;    /* passe l'un sous l'autre si l'écran est trop étroit */
+}
+
+.cote-a-cote embed,
+.cote-a-cote iframe {
+  width: 500px;
+  height: 400px;
+  border: 1px solid #000000bd;
+}
