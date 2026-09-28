@@ -32,6 +32,64 @@
         }
     </script>
 
+    <h1>Chapter 22: Input Control Elements</h1>
+    <input type="text" id="textInput" name="textInput" placeholder="Enter your text here" required> 
+    <input type="password" id="passwordInput" name="passwordInput" placeholder="Enter your password" required>
+    <button onclick="submitForm()">Submit</button>
+    <script>
+        function submitForm() {
+            var textValue = document.getElementById('textInput').value;
+            var passwordValue = document.getElementById('passwordInput').value;
+            alert('Text: ' + textValue + '\nPassword: ' + passwordValue);
+        }
+    </script>
+
+    <input type="checkbox" id="checkboxInput" name="checkboxInput">
+    <label for="checkboxInput">Check me</label>
+    <input type="color" id="colorInput" name="colorInput">
+    <label for="colorInput">Choose a color</label>
+    <input type="date" id="dateInput" name="dateInput">
+    <input type="email" id="emailInput" name="emailInput" placeholder="Enter your email">
+    <input type="file" id="fileInput" name="fileInput"> 
+    <input type="tel" id="telInput" name="telInput" placeholder="+254070000000">
+    <input type="number" id="numberInput" name="numberInput" placeholder="Enter a number" value="0" min="0" max="100">
+    <input type="range" id="rangeInput" name="rangeInput" min="0" max="100">
+    <input type="search" id="searchInput" name="searchInput" placeholder="Search...">
+    <input type="time" id="timeInput" name="timeInput">
+    <input type="url" id="urlInput" name="urlInput" placeholder="Enter a URL">
+    <input type="week" id="weekInput" name="weekInput">
+    <input type="month" id="monthInput" name="monthInput">
+    <input type="datetime-local" id="datetimeInput" name="datetimeInput">
+
+    <h2>Button Group</h2>
+    
+    <fieldset> 
+        <legend>Theme color:</legend> 
+        <p> 
+            <input type="radio" name="color" id="red" value="#F00"> 
+            <label for="red">Red</label> 
+        </p> 
+        <p> 
+            <input type="radio" name="color" id="green" value="#0F0"> 
+            <label for="green">Green</label> 
+        </p> 
+        <p> 
+            <input type="radio" name="color" id="blue" value="#00F"> 
+            <label for="blue">Blue</label> 
+        </p> 
+    </fieldset>
+    
+    <input hidden type="hidden" name="hiddenInput" value="This is a hidden value">
+    <br>
+    <div id="colorDisplay" style="width: 100px; height: 100px; background-color: #ffffff77; border: 1px solid #000;" display="flex"></div>
+        <h2>File Input</h2>
+        <input type="file" id="fileInput" name="fileInput" accept=".jpg,.jpeg,.png,.gif" multiple>
+        <br><br>
+        <h2>Pattern Input</h2>
+        <input type="text" id="patternInput" name="patternInput" pattern="[0-9]{3}-[0-9]{2}-[0-9]{4}" placeholder="Enter SSN (XXX-XX-XXXX)">   
+    </div>
+
+
 
 </body>
 </html>
