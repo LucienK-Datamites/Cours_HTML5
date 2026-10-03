@@ -93,3 +93,16 @@ inner-div{
   height: 400px;
   border: 1px solid #000000bd;
 }
+
+ul {
+  list-style-type: circle;
+  padding-left: 20px;
+}
+li {
+  list-style-type: square;
+  margin-bottom: 5px;
+}
+ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+}

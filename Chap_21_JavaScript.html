@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML5 Chapter 21: JavaScript in HTML</title>
+    <title>HTML5 Chapter 26: Marking Up Content</title>
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -17,11 +17,12 @@
                 <li><a href="Chap_6_IDs.html">Chapitre 6 : IDs et classes</a></li>
                 <li><a href="Chap_15_Headings.html">Chapitre 15 : Headings</a></li>
                 <li><a href="Chap_21_JavaScript.html">Chapitre 21 : JavaScript in HTML</a></li>
+                <li><a href="Chap_26_Marking Up.html">Chapitre 26 : Marking Up Content</a></li>
             </ul>
         </nav>
     </header>
 
-    <h1>HTML5 Chapter 21 - JavaScript in HTML</h1>
+    <h1>HTML5 Chapter 26 - Marking Up Content</h1>
     <script src="javaScript.js" type="text/javascript" async charset="utf-8" crossorigin="anonymous"></script>
 
     <p>This chapter demonstrates how to include JavaScript code directly within an HTML document.</p>
@@ -94,24 +95,46 @@
     <script src="script.js" type="text/javascript" async charset="utf-8" crossorigin="anonymous"></script>  
     
     <h1>Chapter 25: Lists</h1>
+    <h2>Unordered List</h2>
     <ul>
         <li>Item 1</li>
         <li>Item 2</li>
         <li>Item 3</li>
     </ul>
+    <br>
+    <h2>Ordered List</h2>
     <ol>
         <li>First</li>
         <li>Second</li>
         <li>Third</li>
     </ol>
+    <br>
+    <h2>Another Ordered List</h2>
+    <ol type="1|a|A|i|I">
+        <li>Fourth</li>
+        <li>Fifth</li>
+        <li>Sixth</li>
+    </ol>
+    <br>
+    <h2>Description List</h2>   
     <dl>
         <dt>Term 1</dt>
         <dd>Description 1</dd>
         <dt>Term 2</dt>
         <dd>Description 2</dd>
     </dl>
-
-
+    <br>
+    <h2>Nested List</h2>
+    <ul> 
+        <li>item 1</li> 
+        <li>item 2 
+            <ul> 
+            <li>sub-item 2.1</li> 
+            <li>sub-item 2.2</li> 
+            </ul> 
+        </li> 
+        <li>item 3</li> 
+    </ul>
 
 </body>
 </html>
