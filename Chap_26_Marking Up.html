@@ -72,6 +72,65 @@
             &lt;/script&gt;
     </pre>
 
+    <pre>
+        <code>
+            x=42
+            if x > 10:
+                print("x is greater than 10")
+            else:
+                print("x is 10 or less")
+        </code>
+    </pre>
+    <br>
+    <h1> Chapter 27: Marking-up Quotes</h1>
+
+    <p>In HTML, you can mark up quotes using the <q> Short quote</q> and <blockquote> for long quotes </blockquote> The <q> tag is used for short inline quotes,</q> while the <blockquote> tag is used for longer block-level quotes </blockquote>.</p>
+
+    <blockquote> 
+        <p>The answer is 42. very very long quote that spans multiple lines.</p> 
+    </blockquote>
+
+    <br>
+    <blockquote cite="https://www.amazon.com">
+        <p>This is a blockquote with a citation. The source of the quote is provided using the cite attribute.</p>
+    </blockquote>
+    <p>Source: <cite><a href="https://www.amazon.com" rel="external">Amazon</a></cite></p>
+
+    <br>
+    <h1> Chapter 28: Media Elements</h1>
+    <p>HTML5 introduced new media elements for embedding audio and video content directly into web pages. The <audio> element is used for audio playback, while the <video> element is used for video playback. Both elements support various attributes to control playback, such as controls, autoplay, loop, and muted.</p>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+   <br>
+    <video controls width="320" height="240" tracks="captions" autoplay loop muted poster="https://th.bing.com/th/id/OIP.0Ob3x4tshVrCydJ-HnyDIgHaEK?w=294&h=180&c=7&r=0&o=7&pid=1.7&rm=3">
+        <source src="https://youtu.be/TpHVWiZv99Y?si=-35oakjeE_Xn95Jh" type="video/webm">
+        Your browser does not support the video element.
+    </video>
+   <br>
+    <p>These media elements allow developers to create rich multimedia experiences on the web without relying
+    
+    <video width="480" controls poster="https://archive.org/download/WebmVp8Vorbis/webmvp8.gif"  loop muted> 
+        <source src="https://archive.org/download/WebmVp8Vorbis/webmvp8.webm" type="video/webm"> 
+        <source src="https://archive.org/download/WebmVp8Vorbis/webmvp8_512kb.mp4" type="video/mp4"> 
+        <source src="https://archive.org/download/WebmVp8Vorbis/webmvp8.ogv" type="video/ogg"> 
+        Your browser doesn't support HTML5 video tag. 
+    </video>
+
+
+    <br>
+    <h1> Chapter 29: Meta Information</h1>
+    <p>Meta information in HTML is provided using the <meta> tag, which is placed within the <head> section of an HTML document. Meta tags provide metadata about the web page, such as character encoding, author, description, keywords, and viewport settings. This information is not displayed on the page but is used by browsers and search engines to understand the content and behavior of the page.</p>
+    <p>Example of meta tags:</p>
+    <pre>
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;meta name="description" content="This is a sample HTML5 document with meta information."&gt;
+        &lt;meta name="keywords" content="HTML5, meta tags, web development"&gt;
+        &lt;meta name="author" content="Your Name"&gt;
+    </pre>
+    
 
 
 </body>
